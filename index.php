@@ -32,7 +32,20 @@
     // round(), rand(min, max), min max 
     // round() digunakan untuk membulatkan angka float ke mana paling dekat dia angkanya, jika 2.44 , maka ke angka 2, jika 2.50 dibulatkan ke angka 3
     // rand(5, 10) digunakan untuk melakukan angka random mulai dari angka 5 sampai ke angka 10
-    echo "Angka hari ini adalah ". round($angka3);
+    
+    // =========== string method ===========
+    // strlen = digunakan untuk mengecek jumlah huruf
+    //  str_word_count = digunakan untuk mengecek jumlah kata
+    // str_replace(find,replace,string) = digunakan untuk mengganti kata yang di temukan didalam suatu string
+    // str_repeat(text, times); = digunakan untuk mengulang kata yang sama sebanyak yang diinginkan
+    // str_suffle(text)
+    $text = "Hai semuanya ";
+    // echo strlen($text);
+    // echo str_count_word($text);
+    // echo str_replace("Hai", "Hoi", $text);
+    // echo str_repeat("Hoi ", 10); 
+    echo str_repeat( str_replace("Hai", "Hello ", $text), 10 );
+
 
 
   ?>
