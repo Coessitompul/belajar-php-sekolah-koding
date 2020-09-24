@@ -45,13 +45,25 @@
     "pekerjaan" => "Developer"
   ] ;
 
-  print_r($data);
+  $data2 = [ 
+    "istri" => "belum ada" , 
+    "laptop" => "dellsuperbook"
+  ] ;
+
+  // print_r($data);
 
   // cara mengubah nilai dari associative array
-  $data['nama'] = "Coes Priandi Sitompul";
+  // $data['nama'] = "Coes Priandi Sitompul";
   // cara untuk cetak isi dari associative array
-  echo "Namanya adalah ". $data['nama'];
+  // echo "Namanya adalah ". $data['nama'];
 
+  // =========== Metode Associative Array ===========
+  // array_values digunakan untuk memberi nomor-nomor indeks pada associative array
+  // print_r(array_values($data));
+  //  array-keys digunakan untuk mengembalikan key (kunci) dari array associative
+  // print_r(array_keys($data));
+  //  array_merge digunakan untu menggabungkan array, seberapa banyak pun array yang diiginkan karena tinggal hanya membuat tanda koma, dan menuliskan variabel array mana yang aan digabung
+  print_r(array_merge($data, $data2));
 
 
   ?>
