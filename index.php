@@ -39,16 +39,16 @@
 
   // =========== Associative Array ===========
   // key => isi
-  $data = [ 
-    "nama" => "Coes Sitompul" , 
-    "umur" => 21,
-    "pekerjaan" => "Developer"
-  ] ;
+  // $data = [ 
+  //   "nama" => "Coes Sitompul" , 
+  //   "umur" => 21,
+  //   "pekerjaan" => "Developer"
+  // ] ;
 
-  $data2 = [ 
-    "istri" => "belum ada" , 
-    "laptop" => "dellsuperbook"
-  ] ;
+  // $data2 = [ 
+  //   "istri" => "belum ada" , 
+  //   "laptop" => "dellsuperbook"
+  // ] ;
 
   // print_r($data);
 
@@ -63,7 +63,22 @@
   //  array-keys digunakan untuk mengembalikan key (kunci) dari array associative
   // print_r(array_keys($data));
   //  array_merge digunakan untu menggabungkan array, seberapa banyak pun array yang diiginkan karena tinggal hanya membuat tanda koma, dan menuliskan variabel array mana yang aan digabung
-  print_r(array_merge($data, $data2));
+  // print_r(array_merge($data, $data2));
+
+  //  =========== Array Multi dimensi ===========
+    $data = [
+      ["programmer", "21", "males"],
+      ["designer", "24", "rajin"],
+      ["manager", "34", "males banget"]
+    ];
+
+    // 00 01 02
+    // 10 11 12
+    // 20 21 22
+
+    $data[2][0] = "Proyek Manager"; //contoh cara mengganti nilai didalam array
+    echo $data[2][0]; // contoh cara mencetak hasil dari multi dimensi array
+
 
 
   ?>
