@@ -24,10 +24,18 @@
     // 1. Integer tidak menggunakan koma
     // 2. Float pemisahan angka berkoma ditandai dengan titik (100.123) bukan (100,123 = salah)
 
-    $angka = 1000;
-    $angka2 = 100.123;
+    $angka  = 1000;
+    $angka2 = 3;
+    $angka3 = 2;
 
-    echo "Hasil dari $angka + $angka2 adalah ". ($angka + $angka2);
+    // operator aritmatik
+    // + - * / % ++ --
+    // matematika dasar kerjain perkalian dulu baru penjumlahan
+    // jika anda mendeklarasikan nama variabel yang sama maka, nama variabel yang paling bawah yang akan digunakan, anda akan dianggap telah mengganti nilainya
+    $angka *= $angka;
+    echo $angka;
+
+
 
   ?>
 
