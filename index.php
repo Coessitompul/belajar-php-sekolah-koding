@@ -7,11 +7,13 @@
 </head>
 <body>
   
-  Hai dunia !
-
   <?php 
-    echo "Belajar php di sekolah koding";
+    echo "<h1>Belajar php di sekolah koding</h1>";
+    echo "Halo <br>";
+    echo "Member";
   ?>
+
+  Hai dunia !
 
 </body>
 </html>
