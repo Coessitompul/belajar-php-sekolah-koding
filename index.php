@@ -26,15 +26,13 @@
 
     $angka  = 1000;
     $angka2 = 3;
-    $angka3 = 2;
+    $angka3 = 2.64;
 
-    // operator aritmatik
-    // + - * / % ++ --
-    // matematika dasar kerjain perkalian dulu baru penjumlahan
-    // jika anda mendeklarasikan nama variabel yang sama maka, nama variabel yang paling bawah yang akan digunakan, anda akan dianggap telah mengganti nilainya
-    $angka *= $angka;
-    echo $angka;
-
+    // metode matematika
+    // round(), rand(min, max), min max 
+    // round() digunakan untuk membulatkan angka float ke mana paling dekat dia angkanya, jika 2.44 , maka ke angka 2, jika 2.50 dibulatkan ke angka 3
+    // rand(5, 10) digunakan untuk melakukan angka random mulai dari angka 5 sampai ke angka 10
+    echo "Angka hari ini adalah ". round($angka3);
 
 
   ?>
