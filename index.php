@@ -16,15 +16,14 @@
 
   // variabel pada php
   // kita tidak boleh  menggunakan angka terlebih dahulu untuk membuat variabel, tetapi harus menggunakan huruf, kemudian jika perlu bisa anda gunakan angka untuk menambahkan variabel yang anda mulai dengan huruf kemudian bisa dilanjutan dengan angka jika diperlukan.
-    $nama = "Sekolah Koding";
+    $nama  = "Sekolah Koding";
+    $nama2 = "Bermain Koding";
+    echo "Selamat datang di \$nama";
 
-    echo "<h1>Belajar php di $nama</h1>";
-    echo "Halo". $nama ."<br>"; // titik (.) digunakan sebagai penghubung
-    echo "Hello Member";
+    // untuk mencetak $nama, bukan nilai dari $nama
+    // maka gunakan \ menjadi seperti ini \$nama
 
   ?>
-
-  Hai dunia !
 
 </body>
 </html>
