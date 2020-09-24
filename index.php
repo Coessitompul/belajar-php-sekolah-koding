@@ -18,10 +18,16 @@
   // kita tidak boleh  menggunakan angka terlebih dahulu untuk membuat variabel, tetapi harus menggunakan huruf, kemudian jika perlu bisa anda gunakan angka untuk menambahkan variabel yang anda mulai dengan huruf kemudian bisa dilanjutan dengan angka jika diperlukan.
     $nama  = "Sekolah Koding";
     $nama2 = "Bermain Koding";
-    echo "Selamat datang di \$nama";
+    echo "Selamat datang di $nama <br>";
 
-    // untuk mencetak $nama, bukan nilai dari $nama
-    // maka gunakan \ menjadi seperti ini \$nama
+    // tipe data angka/number
+    // 1. Integer tidak menggunakan koma
+    // 2. Float pemisahan angka berkoma ditandai dengan titik (100.123) bukan (100,123 = salah)
+
+    $angka = 1000;
+    $angka2 = 100.123;
+
+    echo "Hasil dari $angka + $angka2 adalah ". ($angka + $angka2);
 
   ?>
 
