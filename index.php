@@ -37,8 +37,20 @@
   // sort($angka);
   // print_r(array_reverse($angka));
 
-  
+  // =========== Associative Array ===========
+  // key => isi
+  $data = [ 
+    "nama" => "Coes Sitompul" , 
+    "umur" => 21,
+    "pekerjaan" => "Developer"
+  ] ;
 
+  print_r($data);
+
+  // cara mengubah nilai dari associative array
+  $data['nama'] = "Coes Priandi Sitompul";
+  // cara untuk cetak isi dari associative array
+  echo "Namanya adalah ". $data['nama'];
 
 
 
