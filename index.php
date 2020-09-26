@@ -10,12 +10,20 @@
   <h1>Array PHP</h1>
 
   <?php 
+  // ========= Perulangan ==========
 
-  $hewan = ["Anjing", "Domba", "Kelinci", "Gorilla"];  
-  for($i = 0; $i < count($hewan); $i++) {
-    echo "======";
-    echo $hewan[$i];
-    echo "====== <br>";
+  $hewan = ["Anjing", "Domba", "Kelinci", "Gorilla", "Lombu Aek"];  
+  // for($i = 0; $i < count($hewan); $i++) {
+  //   echo "======";
+   //   echo $hewan[$i];
+  //   echo "====== <br>";
+  // }
+
+  // ===== foreach() =====
+  foreach($hewan as $hwn) {
+    echo "====== ";
+    echo $hwn;
+    echo " ====== <br>";
   }
 
   ?>
