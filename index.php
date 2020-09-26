@@ -11,77 +11,57 @@
 
   <?php 
 
-  // ========== tipe data array ==========
-  $angka = [12, 42, 3, 1, 56];
-  $kotak = array('anjing', 'kura-kura', 'koala', 'anjing');
-  $nama = ['Hilman', 'Endy', 'Tiqa'];
-  //print_r($kotak); //print_r() bisa digunakan untuk memprint array
-  // echo $kotak[0];
-  // echo $nama[2];
+  // ========== pengulangan ==========
+  // for(variabel awal(mulai); batas(syarat); perubahan)
+  // for($i = 6; $i > 0; $i--) {
+  //   // echo "Sekolah Koding <br>";    
+  //   // echo "* ". $i . "<br> ";    
+  //   for($a = 1; $a < $i; $a++) {
+  //     echo "&nbsp";
+  //   }
+  //   for($j = 6; $j >= $i; $j--) {            
+  //     echo "*";
+  //   }    
+  //   echo "<br>";
+  // }
 
-  // ========== metode array ==========
-  // array_unique = digunakan untuk menampilkan yang unik saya, jika ada kaa yang berulang, maka hanya akan ditampilkan sekali saja
-  // array_reverse = digunakan untuk membalik nilai array 
-  /* shuffle = digunakan membuat random nilai yang ada di dalam array, tetapi suffle ini harus dilakukan sebelum di print(cetak) 
-  Contoh: coba jalankan programn di bawah ini
-    shuffle($kotak);
-    print_r( $kotak );
-  */
+    
+    for($i = 4; $i >= 0 ; $i--) {
 
-  // count = digunakan untuk menguji berapa isi dari array kita 
-  // echo count($kotak);
+      for($j = 0; $j <= $i; $j++) {
+        echo "&nbsp";
+        // *****
+        // ****
+        // *****
+        // ****
+      }
+      for($k = 4; $k >= $i; $k--) {
+        echo "#";
+        // #####
+      }
 
-  //  sort = digunakan untuk mengurutkan isi array sesuai kalimat, jika isi array adalah number, maka akan diurutkan berdasarkan angka yang terkecil. penggunaan sort sama dengan shuffle, sama-sama digunakan diawal sebelum di nilai-nya dicetak
-  // sort($kotak);
-  // print_r($kotak);
-  // sort($angka);
-  // print_r(array_reverse($angka));
+      echo "<br>";
+    }  
+      /* logikannya adalah bahwa perulangan bintang itu akna terus dilakukan, selama angka yang dimasukkan belum mencapai batas yang sudah ditentukan
+      contoh : 
+      for($i = 0; $i < 5; $i++) {
+        for($j = $i; $j < 5; $j++) {
+          echo "*";          
+        }
+      }
 
-  // =========== Associative Array ===========
-  // key => isi
-  // $data = [ 
-  //   "nama" => "Coes Sitompul" , 
-  //   "umur" => 21,
-  //   "pekerjaan" => "Developer"
-  // ] ;
+      ketika $i = 0, kemudian di cek apakah 0 < 5 jika benar akan dilanjutkan ke block kode selanjutnya, kemudian masu keperulangan kedua, $j = $i (yang mana $i disini bernilai 0) kemudian cek apakah 0 < 5 jika benar akan dilanjutkan dengan perulangan untuk mencetak bintang sebanyak 5 dalam satu baris. kemudian setelah selesai mencetak 5 bintang. maka akan keluar dari perulangan tersebut, kemudian masuk lagi ke perulangan pertama yang mana nilai dari $i disini sekarang sudah menjadi 1 karena ada increment $++, kemudian di cek apakah 1 lebih kecil dari 5 jika iya maka akan dilanjutkan ke block kode selanjutnya, kemudian masuk ke perulangan kedua lagi, $j = $i (yang mana sekarang $i sudah bernilai 1), maka perulangan tersebut akan mengulangi program mencetak bintang sebanyak perulangan yang sudah ditentukan panjangnya.
 
-  // $data2 = [ 
-  //   "istri" => "belum ada" , 
-  //   "laptop" => "dellsuperbook"
-  // ] ;
+      NB :  didalam perhitungan perulangan index selalu di mulai dari angka 0
 
-  // print_r($data);
 
-  // cara mengubah nilai dari associative array
-  // $data['nama'] = "Coes Priandi Sitompul";
-  // cara untuk cetak isi dari associative array
-  // echo "Namanya adalah ". $data['nama'];
+      */
 
-  // =========== Metode Associative Array ===========
-  // array_values digunakan untuk memberi nomor-nomor indeks pada associative array
-  // print_r(array_values($data));
-  //  array-keys digunakan untuk mengembalikan key (kunci) dari array associative
-  // print_r(array_keys($data));
-  //  array_merge digunakan untu menggabungkan array, seberapa banyak pun array yang diiginkan karena tinggal hanya membuat tanda koma, dan menuliskan variabel array mana yang aan digabung
-  // print_r(array_merge($data, $data2));
 
-  //  =========== Array Multi dimensi ===========
-    $data = [
-      ["programmer", "21", "males"],
-      ["designer", "24", "rajin"],
-      ["manager", "34", "males banget"]
-    ];
 
-    // 00 01 02
-    // 10 11 12
-    // 20 21 22
-
-    $data[2][0] = "Proyek Manager"; //contoh cara mengganti nilai didalam array
-    echo $data[2][0]; // contoh cara mencetak hasil dari multi dimensi array
 
 
 
   ?>
-
 </body>
 </html>
